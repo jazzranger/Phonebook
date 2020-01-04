@@ -1,0 +1,16 @@
+INFO:LOG:Функция:ph_del Аргументы:(<phonebook.PhoneBook object at 0x005EDE90>, 'roopert', None),{} Время выполнения:0.0
+INFO:LOG:Функция:file_reader Аргументы:(<phonebook.PhoneBook object at 0x005EDE90>,),{} Время выполнения:0.0
+ERROR:LOG:file_reader
+Traceback (most recent call last):
+  File "C:\Users\EZ\PycharmProjects\untitled1\phonebook_logger.py", line 17, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\EZ\PycharmProjects\untitled1\phonebook.py", line 32, in file_reader
+    self.contacts.append(Contact(row[0], row[1], birthday, row[3]))
+IndexError: list index out of range
+INFO:LOG:Функция:contact_writer Аргументы:(<phonebook.PhoneBook object at 0x005EDE90>, ['roobert', '8(910)805-45-67', None, None]),{} Время выполнения:0.0
+INFO:LOG:Функция:contact_writer Аргументы:(<phonebook.PhoneBook object at 0x005EDE90>, ['roobert', '8(910)805-45-67', None, None]),{} Время выполнения:0.0
+INFO:LOG:Функция:contact_writer Аргументы:(<phonebook.PhoneBook object at 0x005EDE90>, ['oobertb', '8(910)805-45-67', None, None]),{} Время выполнения:0.0
+INFO:LOG:Функция:ph_del Аргументы:(<phonebook.PhoneBook object at 0x005EDE90>, 'roobert', None),{} Время выполнения:0.0
+INFO:LOG:Функция:contact_writer Аргументы:(<phonebook.PhoneBook object at 0x031D7268>, ['Владимир', '8(910)805-69-54', None, None]),{} Время выполнения:0.0
+INFO:LOG:Функция:contact_writer Аргументы:(<phonebook.PhoneBook object at 0x031D7268>, ['вова', '8(910)709-87-65', None, None]),{} Время выполнения:0.0
+INFO:LOG:Функция:contact_writer Аргументы:(<phonebook.PhoneBook object at 0x031D7268>, ['вова', '8(910)709-87-65', datetime.date(1998, 2, 12), None]),{} Время выполнения:0.0
